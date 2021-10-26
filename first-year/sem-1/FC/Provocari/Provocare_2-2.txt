@@ -1,0 +1,45 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int n, v[80]={1},s = 0,n=80,k=0,n1=0,n2=0,nr=1;
+void back(int k,int n) 
+{
+
+	v[k] = 2;
+	for (int i = 0; i < n; i++)
+	{
+		if (s < 80)
+		{
+			if (v[i] == 1)
+				n1++;
+			else
+				n2++;
+			s += v[i];
+			printf("%d", v[i]);
+		}
+		else
+		{
+			v[i] = 0;
+		}
+	}
+	printf("\n");
+	printf("%d,%d\n", n1, n2);
+	nr += n1 * n2 + 1;
+	n1 = 0;
+	n2 = 0;
+	s = 0;
+	while (v[39] != 2)
+		back(k + 1, n-1);
+}
+
+int main()
+{
+	for (int j = 0;  j < 80; j++)
+	{
+		v[j] = 1;
+	}
+	back(k,n);
+	printf("Exista %d solutii posibile pentru a urca %d scari", nr, n);
+	return 0;
+}
+

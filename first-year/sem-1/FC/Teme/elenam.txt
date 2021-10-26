@@ -1,0 +1,33 @@
+module elenam();
+  integer a = 122445763;
+  integer velea=0;
+  integer b;
+  integer jador=996;
+  integer nr=0;
+  integer p=1;
+  initial begin
+  while(a>0) begin
+    b=a%10;
+    if(b%2==0) begin
+      velea = velea +b;
+    end
+    a=a/10;
+  end
+  a=122445763;
+  $display("Suma tuturor numerelor pare din %d este %d",a,velea);
+while(jador>0) begin
+    nr=nr+jador%2*p;
+     p=p*10;
+    jador = jador/2;
+    end
+    jador=996;
+ $display("Reprezentarea in baza 2 a numarului %d este %d",jador,nr);
+ nr=0;
+ while(a>0) begin
+   nr=nr*10+a%10;
+   a=a/10;
+ end
+ a = 122445763;
+ $display("Rasturnatul lui %d este %d",a,nr);
+end
+endmodule  

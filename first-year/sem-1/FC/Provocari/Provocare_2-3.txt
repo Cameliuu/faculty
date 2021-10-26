@@ -1,0 +1,17 @@
+	#Pentru a naviga o grila de 20x20 cu miscari doar in dreapta si jos va fi nevoie de 40 de miscari:20 de miscari in jos si 20 de miscari la dreapta
+   #Astfel notand miscarile in dreapta cu D si cele in jos cu J putem obtine strcturi de forma
+	 #D D D D D D D D D D D D D D D D D D D D J J J J J J J J J J J J J J J J J J J J J J
+	#Asta inseamna ca va trebui sa gasim numarul de posibilitati de a seta jumatate din elemente drept D/J, iar cealalta jumatate va fi setata automat drept J/D
+	#Facem asta calculand combinari de 40 luate cate 20*/
+    #Programul urmator este scris in python, intrucat nu este nevoie de instalarea unei bibiloteci...
+    #...aditionale pentru prelucrarea aritmetica precisa a numerelor
+
+def factorial(n):
+	if n==0 or n==1:
+		return 1 
+	else:
+		return n*factorial(n-1)
+n=40
+k=20
+combinatie=factorial(n)/(factorial(n-k)*factorial(k))
+print(int(combinatie))
