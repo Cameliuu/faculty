@@ -1,0 +1,22 @@
+In urma unui sondaj de opinie, 373 de subiecti au declarant ca le plac pisicile, 459 au  declarant ca le plac cainii, iar 231 au declarant ca le plac atat cainii, cat si pisicile
+Se cere sa se afle procentajul celor ce le plac doar pisicile, doar cainii si celor carora le plac ambele
+
+
+Datele prezentate sunt trei numere
+Vom nota:
+		P- numarul celor carora le plac pisicile
+                  C-Numarul celor carora le plac cainii
+                  T-Totalul subiectilor
+C+231=459
+P+231=373
+C+P+231=T
+C=459-231=228
+P=373-231=142
+T=231+142+228=>T=601
+X/100*601=228=>X=22800/601=>X=37.94
+Y/100*601=142=23.63
+Z/100*601=231=38.43
+In concluzie:
+Procentajul celor carora le plac cainii este 37.94%
+Procentajul carora le plac pisicile este 23.63%
+Procentajul carora le plac si cainii si pisicile este 38.43%

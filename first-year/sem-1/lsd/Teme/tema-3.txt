@@ -1,0 +1,53 @@
+PROBLEMA
+Cu ocazia finalizarii anului fiscal, o platforma de investit online si-a supus utilizatorii unui sondaj pentru a afla ce sector a fost cel mai popular, dar si cel mai putin popular, in functie de procentul acestora, astfel cand rezultatul va fi publicat, numarul de uitilizatori va fi pastrat confidential.
+La intrebarea :
+“In ce sector se incadreaza actiunile pe care le-ati achizitionat de-a lungul acestui an fiscal?” participantii au raspuns:
+	-Atat Energie verde cat si Tehnologie, 135 au raspuns “da”
+	-Atat Energie verde cat si Masini electrice, 214 au raspuns “da”
+	-Atat Tehnologie cat si Masini electrice, 99 au raspuns “da”
+
+INTELEGEREA PROBLEMEI
+
+Aceasta este o problema de tipul “gasire”.
+Vom analiza cu atentie datele din enuntul problemei si vom incerca sa gasim procentul fiecarei categorii pentru a vedea care este cea mai populara si cea mai putin populara.
+                                  
+REZOLVAREA PROBLEMEI
+
+Vom incepe prin a nota: Energie verde – E
+				     Tehnologie – L
+			    	      Masini electrice – M
+				      Total-T
+
+Pentru a afla cati utilizatori au investit in fiecare categorie ne vom lega de relatiile dintre acestia.
+Folosind notatiile de mai sus vom obtine un system, inlocuind
+
+E+L=135=>L=135-E
+E+M=214=>M=214-E
+L+M=99=>135-E+214-E=99
+		-2E+ 349=98
+                    -2E=-250
+		E=125
+L=135-125
+L=10
+M=99-10
+M=89
+E+L+M=125+10+89=224
+Astfel vom obtine urmatoarele rezultate:
+-Numarul celor ce au investit in Energie verde este 135
+-Numarul celor ce au investit in Tehnologie este 10
+-Numarul celor ce au investit in Masini electrice este 89
+-Totalul utilizatorilor supusi sondajului este 224
+Vom trece acum la calculul procentelor
+Notam cu: X-procentul celor ce au investit in in Energie Verde
+              	Y-procentul celor ce au investit in Tehnologie
+	Z-procentul celor ce au investit in masini electrice
+
+X/100*224=135=>X=13500/224=>X=60%
+Y/100*224=10=>Y=1000=224=>Y=4%
+Iar Z este egal cu diferenta dintre 100% si suma lui X si Y
+Z=60%-4%
+Z=56%
+
+
+
+
