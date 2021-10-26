@@ -1,0 +1,83 @@
+/*Să se scrie un program care sa citească de la tastatura numele si vârsta dvs. si  sa  le 
+afișeze*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<string.h>
+int main() {
+	int v;
+	char nume[25];
+	printf("Introduceti varsta!\n");
+	scanf("%d", &v);
+	printf("Introduceti numele!\n");
+	scanf("%s", &nume);
+	printf("Numele dumneavoastra este %s si aveti %u ani!", nume, v);
+	return 0;
+}
+Sa se scrie un program C care afișează produsul a doua variabile întregi, citite de la 
+tastatură.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+	int a, b;
+	printf("Introduceti numerele!\n");
+	printf("a=");
+	scanf("%d",&a);
+	printf("b=");
+	scanf("%d",&b);
+	printf("%d*%d=%d", a, b, a * b);
+}
+Sa se scrie un program C care convertește un unghi din grade în radiani 
+(rad=grad*pi/180).
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main() {
+	float g;
+	float pi = 3.14159265359;
+	printf("Introduceti gradele unhiului mai jos!\n");
+	scanf("%f",&g);
+	printf("%f",g*pi/180);
+	return 0;
+}
+
+Sa se scrie un program C care face conversia din grade Celsius în grade Fahrenheit, C 
+= (F – 32)* 5/9.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main() {
+	float g;
+	printf("Introduceti numarul de grade Celsius mai jos!\n");
+	scanf("%g", &g);
+	printf("%g Grade Celsius sunt %g grade Fahrenheit!", g,(9*g/5)+32);
+	return 0;
+}
+Sa se scrie un program C care afișează cifra unitarilor unei variabile de tip întreg.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main() {
+	int nr;
+	printf("nr=");
+	scanf("%d",&nr);
+	printf("%d", nr % 10);
+}
+Sa se scrie un program care citește de la tastatura lungimile laturilor unui triunghi si 
+afișează aria acestuia, calculata cu formula lui Heron.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+	float a, b, c, p;
+	printf("a=");
+	scanf("%g",&a);
+	printf("b=");
+	scanf("%g", &b);
+	printf("c=");
+	scanf("%g", &c);
+	p = (a + b + c) / 2;
+	printf("Aria triunghiului, aplicand formula lui Heron pentru laturile %g,%g,%g este %g", a, b, c, sqrt(p*(p-a)*(p-b)*(p-c)));
+	return 0;
+}

@@ -1,0 +1,161 @@
+int main()
+6. Fie a și b două numere întregi citite de la tastatură. Scrieți un algoritm care să verifice 
+dacă a și b sunt numere consecutive.
+	int a, b;
+	printf("Introduceti numerele!\na=");
+	scanf("%d", &a);
+	printf("b=");
+	scanf("%d", &b);
+	if (abs(a - b) == 1)
+		printf("Numerele sunt consecutive");
+	else
+		printf("Numerele nu sunt consecutive");
+		return 0;
+}
+
+int main()
+{
+5.Se citesc 3 variabile reale a, b si c. Sa se calculeze valoare expresiei:
+	int a, b, c;
+	printf("Introduceti numerele!\na=");
+	scanf("%d", &a);
+	printf("b=");
+	scanf("%d", &b);
+	printf("Introduceti c=");
+	scanf("%d", &c);
+	if (!c)
+		printf("f=%d", a / b);
+	else if (c > 0)
+		printf("f=%d", sqrt(a + b));
+	else
+		printf("f=%d", a * b);
+	return 0;
+}
+
+int main()
+{3. Să se realizeze un program care citește două numere reale de la tastaură și apoi afișează 
+	un meniu cu următoarele opțiuni :
+	a.Suma numerelor introduse
+		b.Diferenta numerelor introduse
+		c.Produsul numerelor introdue
+		d.Raportul numerelor introduse
+		e.Iesire
+	int a,b,o;
+	printf("Introduceti numerele!\na=");
+	scanf("%d", &a);
+	printf("b=");
+	scanf("%d", &b);
+	printf("Alegeti optiunea!\n1.Suma\n2.Diferenta\n3.Produs\n4.Raport\n5.Iesire\n");
+	scanf("%d", &o);
+	switch(o)
+	{
+		case 1:
+			printf("%d+%d=%d", a, b, a + b);
+			break;
+		case 2:
+			printf("%d-%d=%d", a, b, a - b);
+			break;
+		case 3:
+			printf("%d*%d=%d", a, b, a * b);
+			break;
+		case 4:
+			printf("%d/%d=%d",a,b,a/b);
+			break;
+		case 5:
+			break;
+		default:
+			printf("Optiunea introdusa este incorecta!");
+	}
+	return 0;
+}
+
+int main()
+{
+2.	//Să se scrie un program în C care citește 2 numere de la tastatură și verfică dacă sunt 
+   //divizile cu 3. Dacă sunt divizibile se va face suma dintre ele, dacă nu produsul.
+	int a, b,s=0,p=1;
+	printf("Introduceti a=");
+	scanf("%d", &a);
+	printf("Introduceti b=");
+	scanf("%d", &b);
+	if (!(a % 3) && !(b % 3))
+		printf("%d+%d=%d", a, b, a + b);
+	else
+		printf("%d*%d=%d", a, b, a * b);
+	return 0;
+}
+int main()
+{
+	1.//Să se scrie un program în C care să rezolve o ecuație de gradul 2, cu coeficienții a, b, c 
+   //reali introduși de la tastatura.
+	int a, b, c, x1, x2,d;
+	printf("Introduceti a=");
+	scanf("%d", &a);
+	printf("Introduceti b=");
+	scanf("%d", &b);
+	printf("Introduceti c=");
+	scanf("%d", &c);
+	if (!a)
+		if (!b)
+			printf("Ecuatia nu are solutii reale");
+		else
+		{
+			x1 = c / b;
+			printf("Ecuatia %dx+%d are o solutie reala : %d", b, c, x1);
+		}
+
+	else
+	{
+		d = pow(-b, 2) - 4 * a * c;
+		if (!d)
+		{
+			x1 = (-b + sqrt(d)) / 2 * a;
+				x2 = x1;
+			printf("Ecuatia are %dx^2+%dx+%d are doua solutii reale, egale : %d", a, b, c, x1);
+		}
+		else if (d < 0)
+			printf("Ecuatia nu are solutii reale");
+		else if (d > 0)
+		{
+			x1 = (-b + sqrt(d)) / 2 * a;
+			x2 = (-b - sqrt(d)) / 2 * a;
+			printf("Ecuatia are %dx^2+%dx+%d are doua solutii reale, : %d, %d", a, b, c, x1,x2);
+		}
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+int main()
+{
+Se citesc de la tastatura 3 numere reale pozitive, a b si c. Scrieti un program în C care
+să verifice dacă numerele citite pot constitui laturile unui triunghi. În caz afirmativ,
+determinați tipul triunghiului (echilateral, isoscel sau dreptunghic) și afișați aria sa.
+	int a, b, c;
+	printf("Introduceti a=");
+	scanf("%d", &a);
+	printf("Introduceti b=");
+	scanf("%d", &b); 
+	printf("Introduceti c=");
+	scanf("%d", &c);
+	if (a && b && c && (a + b >= c || a + c >= b || b + c >= a))
+	{
+		if (a == b && b == c)
+			printf("Triunghiul este echilateral");
+		else if (a == b || a == c || b == c)
+			printf("Triunghiul este isocel");
+		else if (pow(a, 2) + pow(b, 2) == pow(c, 2) || pow(a, 2) + pow(c, 2) == pow(b, 2) || pow(c, 2) + pow(b, 2) == pow(c, 2))
+		printf("Triunghiul este dreptunghic");
+		else
+			printf("Triunghiul este oarecare");
+	}
+	else
+		printf("Triunghiul este oarecare");
+	return 0;
+};

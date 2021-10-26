@@ -1,0 +1,192 @@
+int inversul(int k,int o)
+{
+	if (k)
+		return inversul(k/10,o*10+k%10);
+	else
+		return o;
+}
+int cpare(int k) {
+	if (k % 10 % 2 == 0 && k)
+		return 1 + cpare(k/10);
+	else if (k)
+		return cpare(k/10);
+	else
+		return 0;
+
+}
+int cimpare(int k) {
+	if (k % 10 % 2 == 1 && k)
+		return 1 + cimpare(k / 10);
+	else if (k)
+		return cimpare(k / 10);
+	else
+		return 0;
+
+}
+int sume(int k)
+{
+	if (k)
+		return k % 10 + sume(k / 10);
+	else
+		return 0;
+}
+int produsul(int k)
+{
+	if (k%10)
+		return k % 10 * produsul(k / 10);
+	else if (k && !(k % 10))
+		return produsul(k / 10);
+	else
+		return 1;
+}
+int mediaA(int k)
+{
+	if (k)
+		return 1 + mediaA(k / 10);
+	else
+		return 0;
+}
+int main()
+{
+	/*Realizati un program in C care permite uitilizatorului sa citeasca un numar de la tastatura, iar
+		apoi acesta poate sa calculeze urmatoarele :
+
+        1.inversul numarului
+		\n2.afisarea numarului de cifre pare din numar
+		\n3.afisarea numarului de cifre impare din numar
+		\n4.afisarea sumei cifrelor numarului
+		\n5.afisarea  produsului  cifrelor  numarului.Se  vor  ignora  toate  cifrele  egale  cu  0  in  calculul
+		\nprodusului.
+		\n6.afisarea mediei aritmetice a cifrelor numarului
+		\n0.Iesire*/
+	enum optiuni{iesire,invers,pare,impare,suma,produs,medie};
+	enum optiuni opt;
+	int n,o=0;
+	printf("Introduceti numarul! ");
+	scanf("%d", &n);
+	while (1)
+	{
+		printf("-----------------------------------------------------------------------------------\n");
+		printf("Alegeti optiunea!\n1.Inversul numarului\n2.Afisarea numarului de cifre pare din numar\n3.Afisarea numarului de cifre impare din numar\n4.Afisarea sumei cifrelor numarului\n5.Afisarea  produsului  cifrelor  numarului.\n6.Afisarea mediei aritmetice a cifrelor numarului\n0.Iesire\n");
+		scanf("%d", &opt);
+		switch (opt) 
+		{
+		case iesire:
+			printf("Programul se va inchide acum...");
+			exit();
+			break;
+		case pare:
+			printf("Numarul de cifre pare al numarului %d este %d\n", n, cpare(n));
+			break;
+		case invers:
+			printf("Inversul numarului %d este numarul %d\n", n, inversul(n,o));
+			break;
+		case impare:
+			printf("Numarul de cifre impare al numarului %d este %d\n", n, cimpare(n));
+			break;
+		case suma:
+			printf("Suma cifrelor numarului %d este %d\n", n, sume(n));
+			break;
+		case produs:
+			printf("Produsul cifrelor numarului %d este %d\n", n, produsul(n));
+			break;
+		case medie:
+			printf("Media aritmetica a cifrelor numarului %d este %.2f", n, (float)sume(n)/(float)mediaA(n));
+			break;
+
+		default:
+			printf("Optiunea introdusa nu este valabila!\n");
+		}
+	}
+**********************************************************************************
+int main()
+{
+	/* Se citesc de la tastatură n numere. Să se calculeze pentru fiecare număr produsul 
+cifrelor prime și să se afișeze toate produsele care sunt mai mici decât un număr nr citit 
+anterior. */
+	int n, prime[] = { 2,3,5,7 },nr,nra,i,j,p=1,t;
+	printf("Introduceti lungiea sirului de numere!\n");
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
+	{
+		printf("Introduceti numarul!\n");
+		scanf("%d", &nr);
+		t = nr;
+		if (i)
+		{
+			while (t)
+			{
+				for (j = 0; j <=3; j++)
+					if (t % 10 == prime[j]) 
+						p *= t % 10;
+				t /= 10;
+			}
+			if (p < nra)
+				printf("Produsul cifrelor prime ale numarului %d sunt mai mare decat numarul introdus anterior(%d), acesta fiind %d\n",nr, nra, p);
+			p = 1;
+		}
+		nra=nr;
+	}
+}
+int main()
+{
+/*Se citesc numere de tip întreg până se vor introduce 2 numere consecutive. Să se 
+afișeze câte din aceste numere sunt pătrate perfecte*/
+	int n,nr=0;
+	while (1)
+	{
+		printf("Introduceti numarul!\n");
+			scanf("%d", &n);
+			if (abs(n - nr) == 1 && nr)
+			{
+				printf("Ati introdus doua numere consecutive(%d si %d)\nProgramul se va inchide acum!", n, nr);
+				exit();
+			}
+		else
+		{
+			if (!((float)sqrt(n) - (int)sqrt(n)))
+				printf("Numarul %d este patrat perfect\n", n);
+			nr = n;
+		}
+
+	}
+}
+int main() {
+	/*Să se scrie un program în C care citește de la tastatură un şir de numere încheiat cu 
+numărul 0 şi afișează maximul dintre numerele introduse.*/
+	int n, max = 0,*p;
+	p = &n;
+	
+	do {
+		printf("Introduceti numarul: ");
+		scanf("%d", p);
+		if (*p > max)
+			max = *p;
+	} while (*p);
+		printf("Cel mai mare numar introdus este %d", max);
+}
+int prim(int n)
+{
+	int i, prim = 1;
+	for(i=2;i<=n/2;i++)
+		if (!(n % i))
+		{
+			prim = 0;
+			break;
+		}
+	if (prim)
+		return 1;
+	else
+		return 0;
+ }
+int main()
+{
+	/*2. Să se scrie un program în C care citește de la tastatură un număr întreg şi afișează
+		daca acesta este număr prim sau nu.*/
+	int n,i;
+	printf("Introduceti numarul: ");
+	scanf("%d", &n);
+	
+	(prim(n)) ? printf("Numarul este prim!") : printf("Numarul nu este prim!");
+}
+
