@@ -1,0 +1,16 @@
+ENUNT
+Aceasta este o problema de tip cautare în care vom folosi tehnica inversa (backward). 
+Problema: Fie o galeata de 4 litri si una de 9 litri. Sa se toarne 6 litri de apa în galeata de 
+9 litri utilizând doar aceste doua recipiente. Puteti goli si umple galetile si aveti la 
+dispozitie o cantitate nelimitata de apa. 
+Întelegerea problemei: Aceasta este o problema de tip „gasire”. Problema este sa 
+obtinem 6 l de apa în galeata de 9 l folosind ca masuri galetile de 4 si de 9 l. Oricare 
+dintre galeti poate fi umpluta de la sursa sau din cealalta galeata si se pot goli oricând.
+Rezolvare
+Umplem intai galeata de 9l.
+Apoi, umplem galeata de 4l din cea de 9l.Astfel vom obtine 5l intr-o galeata si 4l in cealalta.
+Varsam cei 4l din galeata cea mica si ramanem doar cu 5l in galeata cea mare
+Umplem apoi galeata  de 4l din cea de 5l, obtinand 1l in galeata de 9l si umpland-o pe cea de 4l.
+Varsam toata galeata de 4l, acum avem doar 1l in galeata de 9l, pe care il turnam in galeata de 4l.
+Dupa ce golim galeata de 9l, o umplem la loc de la sura.Am obtinut 9l intr o galeata si 1 in cealalta.
+Vom umple galeata de 4l din cea de 9,0 fiind nevoie doar de 3l de aceasta data, astfel ramanem cu 6l in galeata de 9l. 
