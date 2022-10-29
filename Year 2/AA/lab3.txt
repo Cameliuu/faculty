@@ -1,0 +1,88 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int A[10];
+char K[10];
+
+int Insert(char c, int tata)
+{
+	unsigned short i;
+	if(A[0]==-1)
+	{
+		A[0]=0;
+		K[0]=c;
+		printf("Nodul radacina a fost initializat cu valorea %c",c);
+		return 0;	
+	}
+	for(i=1;i<10;i++)
+	{
+		if(K[i]==0)
+		{
+			printf("\nINtra\n");
+			K[i]=c;
+			A[i]=tata;
+			printf("Cheia %c a fost inserata pe pozitia %d avand ca tata nodul %d",c,i,tata);
+			return i;
+		}
+	}
+	
+	
+}
+void Delete(char c)
+{
+	printf("Intra pe delete");
+	unsigned short i,j;
+	for(i=0;i<10;i++)
+	{
+		if(K[i]==c)
+		{
+			printf("\nCheia %c a fost stearsa\n",c);
+			K[i] = 0;
+			A[i] = -1;
+			for(j=0;j<10;j++)
+				if(A[j]==i)
+					Delete(K[j]);
+		}
+	}
+}
+void Display()
+{
+	unsigned short i;
+	printf("\n Vectori Tati\n");
+	printf("%d ",A[0]);
+	for(i=1;i<10;i++)
+        {
+                printf("%d ",A[i]+1);
+        }
+	printf("\nVector Chei\n");
+	for(i=0;i<10;i++)
+        {
+                printf("%c ",K[i]);
+        }
+	printf("\n");
+
+
+}
+void Init()
+{
+	A[0]=-1;
+}
+
+int main()
+{
+	Init();
+	Insert('r',0);
+	Insert('b',0);
+	Insert('c',0);
+	Insert('d',1); 
+	Insert('e',1);
+	Insert('h',4);
+        Insert('i',4);
+        Insert('j',4);
+	Insert('f',2);
+	Insert('g',2);
+	Display();
+	Delete('c');
+	Display();
+	Delete('b');
+}

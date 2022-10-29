@@ -1,0 +1,8 @@
+#include<iostream>
+#include<string>
+
+class Monitor
+{
+	std::string producator;
+	unsigned int diagonala,pret;
+}
