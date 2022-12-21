@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="ro" xml:lang="ro">
+<head>
+    <title>Campus Virtual: Conectați-vă la site</title>
+    <link rel="shortcut icon" href="https://cv.upt.ro/theme/image.php/cvupt/theme/1664778938/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Campus Virtual: Conectați-vă la site" />
+<link rel="stylesheet" type="text/css" href="https://cv.upt.ro/theme/yui_combo.php?3.17.2/cssreset/cssreset-min.css&amp;3.17.2/cssfonts/cssfonts-min.css&amp;3.17.2/cssgrids/cssgrids-min.css&amp;3.17.2/cssbase/cssbase-min.css" /><link rel="stylesheet" type="text/css" href="https://cv.upt.ro/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://cv.upt.ro/theme/styles.php/cvupt/1664778938_1653051885/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/cv.upt.ro","sesskey":"oA6LG6dXGf","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1664778938","slasharguments":1,"theme":"cvupt","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1664778938","admin":"admin","svgicons":true,"usertimezone":"Europe\/Bucharest","contextid":1,"langrev":1666920122,"templaterev":"1664778938"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/cv.upt.ro\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/cv.upt.ro\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/cv.upt.ro\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/cv.upt.ro\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/cv.upt.ro\/theme\/yui_combo.php?m\/1664778938\/","combine":true,"comboBase":"https:\/\/cv.upt.ro\/theme\/yui_combo.php?","ext":false,"root":"m\/1664778938\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_quizquestion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_generico-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_justify-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/cv.upt.ro\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/cv.upt.ro\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1664778938\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/cv.upt.ro\/lib\/javascript.php\/1664778938\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/cv.upt.ro\/lib\/javascript.php\/1664778938\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.5\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" /><meta name="robots" content="noindex" /><meta name="robots" content="noindex" /><meta name="robots" content="noindex" /><meta name="robots" content="noindex" /><meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-ro yui-skin-sam yui3-skin-sam cv-upt-ro pagelayout-login course-1 context-1 notloggedin ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Salt la conţinutul principal</a>
+</div><script src="https://cv.upt.ro/lib/javascript.php/1664778938/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://cv.upt.ro/lib/javascript.php/1664778938/lib/polyfills/polyfill.js"></script>
+<script src="https://cv.upt.ro/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://cv.upt.ro/theme/jquery.php/core/jquery-3.5.1.min.js"></script>
+<script src="https://cv.upt.ro/lib/javascript.php/1664778938/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    
+    
+    <!--}" class="navbar-brand 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">CV</span>
+            </a>
+    }}-->
+    
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex makenarrow">
+            <a href="https://cv.upt.ro" class="navbar-brand has-logo d-none d-sm-inline">
+                    <span class="logo d-none d-sm-inline">
+                        <img src="https://cv.upt.ro/pluginfile.php/1/core_admin/logo/0x200/1664778938/logo_CVUPT.png" alt="CV" title="CV">
+                    </span>
+            </a>
+            <ul class="navbar-nav d-none d-md-flex cv-nav">
+                <!-- custom_menu -->
+    			<li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-635fa8d1d783b635fa8d1d48214" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"  aria-controls="drop-down-menu-635fa8d1d783b635fa8d1d48214">
+        Meniul meu
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-635fa8d1d783b635fa8d1d48214" aria-labelledby="drop-down-635fa8d1d783b635fa8d1d48214">
+                <a class="dropdown-item" role="menuitem" href="https://cv.upt.ro/user/profile.php"  >Profil</a>
+                <a class="dropdown-item" role="menuitem" href="https://cv.upt.ro/user/preferences.php"  >Preferinte</a>
+                <a class="dropdown-item" role="menuitem" href="https://cv.upt.ro/calendar/view.php?view=month"  >Calendar</a>
+    </div>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://cv.upt.ro/zoom" >🎥 ZOOM</a>
+</li><li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-635fa8d1d78ad635fa8d1d48215" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Limbă" aria-controls="drop-down-menu-635fa8d1d78ad635fa8d1d48215">
+        Română ‎(ro)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-635fa8d1d78ad635fa8d1d48215" aria-labelledby="drop-down-635fa8d1d78ad635fa8d1d48215">
+                <a class="dropdown-item" role="menuitem" href="https://cv.upt.ro/login/index.php?lang=en"  lang="en" >English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://cv.upt.ro/login/index.php?lang=ro"  >Română ‎(ro)‎</a>
+    </div>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+    
+            <ul class="nav navbar-nav ml-auto mr-0">
+                <div class="d-none d-lg-block">
+    			<!-- search_box -->
+                
+    			</div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center mr-2">
+                    <div class="usermenu"><span class="login">Nu sunteți conectat.</span></div>
+                </li>
+                <!--<li class="nav-item d-flex align-items-center cv-help-btn">
+                    <a href="#" data-toggle="modal" data-target="#cv_modal" alt="" title=""><i class="fa fa-2x fa-question-circle grow"></i></a>
+                </li>-->
+            </ul>
+    </nav>
+    
+
+    <div id="page" class="container-fluid mt-0">
+        <div id="page-content" class="row">
+            <div class="col-xl-1"></div>
+            <div id="region-main-box" class="col-md-12 col-xl-10">
+                <section id="region-main" class="col-12" aria-label="Conținut">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><div class="my-1 my-sm-5"></div>
+<div class="row justify-content-center">
+<div class="col-xl-6 col-sm-8 ">
+<div class="card">
+    <div class="card-block">
+            <h1 class="h2 card-header text-center" >
+                <span class="sr-only">Campus Virtual: Conectare</span>
+                <img src="https://cv.upt.ro/pluginfile.php/1/core_admin/logo/0x200/1664778938/logo_CVUPT.png" class="img-fluid" alt=""/>
+            </h1>
+        <div class="card-body">
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-5">
+                    <form class="mt-3" action="https://cv.upt.ro/login/index.php" method="post" id="login">
+                        <input id="anchor" type="hidden" name="anchor" value="">
+                        <script>document.getElementById('anchor').value = location.hash;</script>
+                        <input type="hidden" name="logintoken" value="R7unMg8Iu8DwhGSfYGlCDbpx9dKDmCe4">
+                        <div class="form-group">
+                            <label for="username" class="sr-only">
+                                    Nume de utilizator/ e-mail
+                            </label>
+                            <input type="text" name="username" id="username"
+                                class="form-control"
+                                value=""
+                                placeholder="Nume de utilizator/ e-mail"
+                                autocomplete="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Parolă</label>
+                            <input type="password" name="password" id="password" value=""
+                                class="form-control"
+                                placeholder="Parolă"
+                                autocomplete="current-password">
+                        </div>
+                            <div class="rememberpass mt-3">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                                <label for="rememberusername">Ține minte numele de utilizator</label>
+                            </div>
+
+                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Conectare</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="forgetpass mt-3">
+                        <p><a href="https://cv.upt.ro/login/forgot_password.php">Mi-am uitat parola.</a></p>
+                    </div>
+
+                    <div class="mt-3">
+                        Cookie-urile trebuie să fie activate în browser-ul dumneavoastră.
+                        <a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;Acest site utilizează două cookie-uri:&lt;/p&gt;
+
+&lt;p&gt;Cookie-ul esențial este cel de sesiune, numit, de obicei, MoodleSession. Trebuie să autorizați acest cookie din browser-ul dumneavoastră, pentru a oferi continuitate și a menține datele de conectare de la pagină la pagină. Când vă deconectați sau închideți browser-ul, acest cookie va fi distrus (în browserul dvs. și pe server).&lt;/p&gt;
+
+&lt;p&gt;Celălalt cookie este doar pentru comoditate, fiind denumit, de obicei, MOODLEID. Acest cookie memorează doar numele de utilizator din browser. Acest lucru înseamnă că, atunci când reveniți pe acest site, câmpul cu numele de utilizator de pe pagina de autentificare va fi deja completat pentru dumneavoastră. Este sigur să refuzați acest cookie, dar va trebui să tastați din nou numele de utilizator de fiecare dată când vă conectați.&lt;/p&gt;
+&lt;/div&gt; "
+    data-html="true" tabindex="0" data-trigger="focus">
+  <i class="icon fa fa-question-circle text-info fa-fw "  title="Asistență Cookie-urile trebuie să fie activate în browser-ul dumneavoastră" role="img" aria-label="Asistență Cookie-urile trebuie să fie activate în browser-ul dumneavoastră"></i>
+</a>
+                    </div>
+
+                    <h2 class="h6 mt-2">Autentificare folosind contul dvs. din platforma:</h2>
+                    <div class="potentialidplist mt-3">
+                            <div class="potentialidp">
+                                <a href="https://cv.upt.ro/auth/oauth2/login.php?id=6&amp;wantsurl=https%3A%2F%2Fcv.upt.ro%2Fmod%2Fresource%2Fview.php%3Fid%3D143078&amp;sesskey=oA6LG6dXGf" title="UPT" class="btn btn-secondary btn-block">
+                                        <img src="https://cv.upt.ro/theme/cvupt/img/logo_upt_gray.png" alt="" width="24" height="24"/>
+                                    UPT
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div></div>
+                    <div class="row">
+                    <div class="col-xl-3">&nbsp;</div>
+					<div class="col-xl-3 text-left pr-0"><a href="https://upt.ro" target="_blank" title="Unealta oficiala a Universitatii Politehnica Timisoara" alt="Unealta oficiala a Universitatii Politehnica Timisoara" style="display:block; background-color: #01135d;"><img src="/theme/cvupt/img/upt.jpg" height="80px"></a></div>
+					<div class="col-xl-3 text-right pl-0"><a href="https://elearning.upt.ro" target="_blank" title="Creat de CeL" alt="Creat de CeL" style="display:block; background-color: #01135d;"><img src="/theme/cvupt/img/cidlogo-2.png"></a></div>
+					<div class="col-xl-3">&nbsp;</div>
+					</div>
+                    
+                </section>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+
+				<span class="pull-right" style="font-size: larger;">
+					<a href='https://suport.elearning.upt.ro/index.php' target='_blank' alt="Suport" title='Suport'><span class="badge badge-pill badge-success p-2"><i class="fa fa-question-circle-o"></i> Suport</span></a>
+				</span>
+            <!--<div class="logininfo">Nu sunteți conectat.</div>-->
+            <!--<div class="homelink"><a href="https://cv.upt.ro/">Acasă</a></div>-->
+            <div class="tool_dataprivacy"><a href="https://cv.upt.ro/admin/tool/dataprivacy/summary.php">Rezumatul păstrării datelor</a></div><div class="policiesfooter"><a href="https://cv.upt.ro/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Fcv.upt.ro%2Flogin%2Findex.php">Politici utilizare site</a></div>
+            
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#page-login-index .potentialidp>a>img").css({'position':'absolute', 'left':'20px', 'height':'34px','width':'34px', 'margin-top':'-6px'});
+    /*$("#page-login-index div.forgetpass").parent().append("<div class='mt-3 align-bottom' style='position:absolute; bottom:0;'><a href='https://www.123formbuilder.com/form-5342823/' target='_blank' title='Cerere cont' alt='Cerere cont' class='btn btn-default'>Solicitare cont de acces<br />pe Campusul Virtual al UPT</div>");*/
+});
+</script><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://cv.upt.ro/lib/requirejs.php/1664778938/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://cv.upt.ro/lib/javascript.php/1664778938/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://cv.upt.ro/lib/javascript.php/1664778938/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://cv.upt.ro/lib/javascript.php/1664778938/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://cv.upt.ro/lib/javascript.php/1664778938/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+
+require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
+        // Initialise the guest popup.
+        $(document).ready(function() {
+            // Only show message if there is some policy related to guests.
+                // Get localised messages.
+                var textmessage = "Dacă continuați să navigați pe acest site, sunteți de acord cu politicile noastre:" +
+                   "<ul>" +
+                   "<li>" +
+                   "<a href=\"https://cv.upt.ro/admin/tool/policy/view.php?versionid=1&amp;returnurl=https%3A%2F%2Fcv.upt.ro%2Flogin%2Findex.php\" " +
+                   "   data-action=\"view-guest\" data-versionid=\"1\" data-behalfid=\"1\" >" +
+                   "Politica de confidentialitate a datelor " +
+                   "</a>" +
+                   "</li>" +
+                   "" +
+                   "</ul>";
+                var continuemessage = "Continuare";
+
+                // Initialize popup.
+                $(document.body).addClass('eupopup');
+                if ($(".eupopup").length > 0) {
+                    $(document).euCookieLawPopup().init({
+                        popupPosition: 'bottom',
+                        popupTitle: '',
+                        popupText: textmessage,
+                        buttonContinueTitle: continuemessage,
+                        buttonLearnmoreTitle: '',
+                        compactStyle: true,
+                    });
+                }
+
+            // Initialise the JS for the modal window which displays the policy versions.
+            ActionsMod.init('[data-action="view-guest"]');
+        });
+});
+
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select635fa8d1d48213', [CustomEvents.events.accessibleChange]);
+    $('#single_select635fa8d1d48213').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f635fa8d1d48212').submit();
+        }
+    });
+});
+;
+
+	$(document).ready(function(){
+		/*var cv_player = $("#cv_vclip")[0];
+		var cv_player_source = $("#cv_vclip").children("source");
+		$(document).on("click",".cv_play_tut",function(e){
+			var vclip = $(this).data("vclip");
+			cv_player_source.attr("src","/theme/cvupt/tut/"+vclip+".mp4");
+			cv_player.load();
+			cv_player.play();
+			e.preventDefault();
+			return false;
+		}).on("click",".cv_close_tut",function(e){
+			cv_player.pause();
+			cv_player.currentTime = 0;
+		});*/
+	});
+;
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https:////www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5051933-4', 'auto');
+  ga('send', 'pageview');
+;
+
+require(['theme_boost/loader']);
+;
+
+    require(['core_form/submit'], function(Submit) {
+        Submit.init("loginbtn");
+        Submit.init("loginguestbtn");
+    });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ultima modificare","name":"Nume","error":"Eroare","info":"Informa\u021bii","yes":"Da","no":"Nu","cancel":"Anulare","confirm":"Confirm\u0103","areyousure":"Sunte\u021bi sigur?","closebuttontitle":"\u00cenchide","unknownerror":"Eroare necunoscut\u0103","file":"Fi\u0219ier","url":"URL","collapseall":"Restr\u00e2nge toate sec\u021biunile","expandall":"Extinde toate sec\u021biunile"},"repository":{"type":"Tip","size":"Dimensiune","invalidjson":"\u0218ir de caractere JSON invalid","nofilesattached":"Nu exist\u0103 fi\u0219iere ata\u0219ate","filepicker":"Selector de fi\u0219iere","logout":"Logout","nofilesavailable":"Nu exista fisiere disponibile","norepositoriesavailable":"Ne pare r\u0103u, niciunul dintre depozitele dumneavoastr\u0103 curente nu pot returna fi\u0219iere \u00een formatul cerut.","fileexistsdialogheader":"Fi\u0219ierul exist\u0103","fileexistsdialog_editor":"Un fi\u0219ier cu acest nume a fost deja ata\u0219at textului pe care \u00eel edita\u021bi","fileexistsdialog_filemanager":"Un fi\u0219ier cu acest nume a fost deja ata\u0219at.","renameto":"Redenumi\u021bi ca \"{$a}\"","referencesexist":"Exist\u0103 {$a} link-uri c\u0103tre acest fi\u0219ier.","select":"Selectare"},"admin":{"confirmdeletecomments":"Sunte\u021bi pe cale s\u0103 \u0219terge\u021bi comentariile, sunte\u021bi sigur?","confirmation":"Confirmare"},"debug":{"debuginfo":"Informa\u021bii despre depanare","line":"Linie","stacktrace":"Urm\u0103 de stiv\u0103"},"langconfig":{"labelsep":":"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random635fa8d1d48217'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random635fa8d1d48217'); });
+})();
+//]]>
+</script>
+
+			<hr class="text-center my-2" style="clear:both; width: 60%;">
+			<div class="row content mb-2">
+				<div class="col-lg-4 col-md-3 col-sm-2">&nbsp;</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 text-center">
+					<a href="https://play.google.com/store/apps/details?id=ro.upt.campusvirtual" target="_blank"><img alt="Get it on Google Play" src="/theme/cvupt/img/playstore.png" style="height:48px;"></a>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 text-center">
+					<a href="https://itunes.apple.com/us/app/campus-virtual-upt/id1397170074?l=ro&ls=1&mt=8" target="_blank" style=""><img src="/theme/cvupt/img/appstore.png" alt="" style="height:48px;"></a>
+				</div>
+				<div class="col-lg-4 col-md-3 col-sm-2">&nbsp;</div>
+			</div>
+			
+        </div>
+    </footer>
+</div>
+
+<div class="modal moodle-has-zindex" data-region="modal-container" aria-hidden="true" role="dialog" id="cv_modal">
+    <div class="modal-dialog modal-lg" role="document" data-region="modal" aria-labelledby="635fa8d1d7fb9635fa8d1d48216-modal-title">
+        <div class="modal-content">
+            <div class="modal-header " data-region="header">
+                    <h4 id="635fa8d1d7fb9635fa8d1d48216-modal-title" class="modal-title" data-region="title" tabindex="0"></h4>
+                <button type="button" class="close" data-dismiss="modal" data-action="hide" aria-label="Închide">
+					<span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" data-region="body">
+				<ul>
+						
+				</ul>
+				<div class='embed-responsive embed-responsive-16by9'>
+					<!--<video id='cv_vclip' controls class='embed-responsive-item text-center' style='width: 100%;'>
+						<source src='/theme/cvupt/tut/1.1__Autentificare.mp4' type='video/mp4'>
+					</video>-->
+				</div>
+            </div>
+            <div class="modal-footer" data-region="footer">
+				<button type='button' class='btn btn-default cv_close_tut pull-right' data-dismiss='modal'></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

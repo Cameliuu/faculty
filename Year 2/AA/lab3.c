@@ -29,7 +29,7 @@ int Insert(char c, int tata)
 }
 int PreOrdine(int i)
 {
-		printf("\nPozitie: %hu\nValoare: %c\n ,Tata: %d\nPrim fiu: %d\n Frate dreapta:%d \n",i,K[i],A[i],PF[i],FD[i]);
+		printf("[%c] \n",K[i]);
 	       	if(PF[i] != -1)
 			{
 				PreOrdine(PF[i]);
@@ -59,11 +59,11 @@ int InOrdine(int i)
 {
 	unsigned short j;
 	if(PF[i] == -1)
-		printf("%c", K[i]);
+		printf("[%c] \n", K[i]);
 	else
 		{
 			InOrdine(PF[i]);
-			printf("%c", K[i]);
+			printf("[%c] \n", K[i]);
 			for(j=i+1;j<=freeslot;j++)
 			{
 				if(A[j]==i+1 && j != PF[i])
